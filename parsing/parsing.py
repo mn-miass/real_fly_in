@@ -1,6 +1,8 @@
 from line_validator import LineValidator
 from file_validator import FileValidator
 from sys import argv
+
+
 class Parsing():
     def __init__(self, path, permission):
         self.path = path
@@ -22,5 +24,7 @@ class Parsing():
 
 
 test = Parsing(argv[1], argv[2])
-print (test.comments)
+print("comments")
+for comment, value in test.comments.values():
+    print(comment, value)
 print(test.empty_line)
