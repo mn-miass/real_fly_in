@@ -1,0 +1,19 @@
+[project]
+name = "fly-in"
+version = "1.0.0"
+description = ""
+authors = [
+    {name = "mn-miass"}
+]
+requires-python = ">=3.10, <4.0"
+dependencies = [
+    "webcolors (>=25.10.0,<26.0.0)",
+    "pydantic (>=2.13.3,<3.0.0)",
+    "rich (>=15.0.0,<16.0.0)",
+    "textual (>=8.2.5,<9.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
